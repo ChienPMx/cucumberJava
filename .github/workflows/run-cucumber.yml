@@ -37,7 +37,7 @@ jobs:
 
       # Bước 5 (Tuỳ chọn): Upload báo cáo Cucumber nếu có
       - name: Upload Cucumber Report
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@v2
         with:
           name: cucumber-report
           path: target/cucumber-reports/
