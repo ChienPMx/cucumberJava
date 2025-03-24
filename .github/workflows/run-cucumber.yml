@@ -6,6 +6,7 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -32,7 +33,7 @@ jobs:
         run: mvn clean test
 
       - name: Upload Cucumber Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@8f733dbe3e91b0c6e60d8427a92c8fe593b6f6d0
         with:
           name: cucumber-report
           path: target/cucumber-reports/
