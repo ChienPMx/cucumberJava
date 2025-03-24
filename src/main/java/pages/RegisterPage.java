@@ -1,14 +1,13 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-
+import static keywords.WebUI.clickElement;
+import static keywords.WebUI.setText;
+import keywords.WebUI;
 public class RegisterPage {
-    WebDriver driver;
 
-    public RegisterPage(WebDriver driver) {
-        this.driver = driver;
-    }
+
+
 
     By username = By.id("username"); // Adjust IDs as per actual site
     By email = By.id("email");
@@ -18,14 +17,13 @@ public class RegisterPage {
     By registerButton = By.xpath("//button[@type='submit']");
 
     public void fillForm(String user, String mail, String pass) {
-        driver.findElement(username).sendKeys(user);
-        driver.findElement(email).sendKeys(mail);
-        driver.findElement(password).sendKeys(pass);
-        driver.findElement(confirmPassword).sendKeys(pass);
-        driver.findElement(receiveEmails).click();
+        setText(username, user);
+        setText(email, mail);
+        setText(password, pass);
+        setText(confirmPassword, pass);
     }
 
     public void clickRegister() {
-        driver.findElement(registerButton).click();
+        clickElement(registerButton);
     }
 }

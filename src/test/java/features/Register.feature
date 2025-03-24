@@ -1,5 +1,5 @@
 Feature: User Registration
-
+  @A
   Scenario: Create a free account on CTFLearner
     Given I am on the registration page
     When I fill in the registration form with valid data
