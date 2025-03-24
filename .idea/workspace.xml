@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8f9e235-9719-4965-ac7f-8745a323d0e0" name="Changes" comment="" />
+    <list default="true" id="b8f9e235-9719-4965-ac7f-8745a323d0e0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/run-cucumber.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/run-cucumber.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
