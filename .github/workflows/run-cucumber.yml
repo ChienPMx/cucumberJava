@@ -1,4 +1,4 @@
-name: Run Cucumber Tests
+name: Run Cucumber Tests on Windows
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest  # Chạy trên Windows
 
     steps:
       - name: Checkout code
@@ -26,26 +26,30 @@ jobs:
       - name: Cache Maven packages
         uses: actions/cache@v3
         with:
-          path: ~/.m2
+          path: C:\Users\runneradmin\.m2
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
 
       - name: Install Google Chrome
         run: |
-          sudo apt update
-          sudo apt install -y google-chrome-stable
+          choco install googlechrome -y
           google-chrome --version
 
       - name: Install ChromeDriver
         run: |
-          CHROME_VERSION=$(google-chrome --version | awk '{print $3}')
-          echo "Installing ChromeDriver for version $CHROME_VERSION"
-          sudo apt install -y chromedriver
+          $chromeVersion = (google-chrome --version) -replace 'Google Chrome ', ''
+          $chromeMajorVersion = $chromeVersion.Split('.')[0]
+          Write-Host "Detected Chrome Major Version: $chromeMajorVersion"
+          
+          $driverVersion = Invoke-RestMethod -Uri "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$chromeMajorVersion"
+          Write-Host "Downloading ChromeDriver version: $driverVersion"
+          
+          Invoke-WebRequest -Uri "https://chromedriver.storage.googleapis.com/$driverVersion/chromedriver_win32.zip" -OutFile "chromedriver.zip"
+          Expand-Archive -Path "chromedriver.zip" -DestinationPath "C:\Windows\System32"
+          Remove-Item "chromedriver.zip"
+          
           chromedriver --version
-
-      - name: Set permissions for target folder
-        run: chmod -R 777 target/
 
       - name: Run Cucumber Tests
         run: mvn clean test -X
