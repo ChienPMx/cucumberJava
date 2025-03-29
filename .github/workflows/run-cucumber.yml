@@ -1,4 +1,4 @@
-name: Run Cucumber Tests on Windows
+name: Run Cucumber Tests
 
 on:
   push:
@@ -34,28 +34,10 @@ jobs:
       - name: Install Google Chrome
         run: |
           choco install googlechrome -y
-          google-chrome --version
+          (Get-Item "C:\Program Files\Google\Chrome\Application\chrome.exe").VersionInfo.FileVersion
 
       - name: Install ChromeDriver
         run: |
-          $chromeVersion = (google-chrome --version) -replace 'Google Chrome ', ''
-          $chromeMajorVersion = $chromeVersion.Split('.')[0]
-          Write-Host "Detected Chrome Major Version: $chromeMajorVersion"
-          
-          $driverVersion = Invoke-RestMethod -Uri "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$chromeMajorVersion"
-          Write-Host "Downloading ChromeDriver version: $driverVersion"
-          
-          Invoke-WebRequest -Uri "https://chromedriver.storage.googleapis.com/$driverVersion/chromedriver_win32.zip" -OutFile "chromedriver.zip"
-          Expand-Archive -Path "chromedriver.zip" -DestinationPath "C:\Windows\System32"
-          Remove-Item "chromedriver.zip"
-          
-          chromedriver --version
-
-      - name: Run Cucumber Tests
-        run: mvn clean test -X
-
-      - name: Upload Cucumber Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: cucumber-reports
-          path: target/cucumber-reports/
+          $chromePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+          $chromeVersion = (Get-Item $chromePath).VersionInfo.FileVersion
+          $chromeMajorVersion = $chrome
