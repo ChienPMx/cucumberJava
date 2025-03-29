@@ -1,6 +1,5 @@
 package driver;
 
-import constants.ConstantGlobal;
 import helpers.PropertiesHelpers;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -28,7 +27,7 @@ public class DriverFactory {
         WebDriver driver;
         if (browserName == null) {
             browserName = "chrome";
-        };
+        }
         switch (browserName.trim().toLowerCase()) {
             case "chrome":
                 driver = initChromeDriver();
@@ -49,7 +48,7 @@ public class DriverFactory {
     private WebDriver initChromeDriver() {
         WebDriver driver;
         System.out.println("Launching Chrome browser...");
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().driverVersion("134.0.6998.165").setup();
 
         ChromeOptions options = new ChromeOptions();
         //options.setHeadless(ConstantGlobal.HEADLESS);

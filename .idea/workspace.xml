@@ -5,24 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8f9e235-9719-4965-ac7f-8745a323d0e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/constants/ConstantGlobal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/driver/DriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/CaptureHelpers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/PropertiesHelpers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/SystemsHelpers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/keywords/WebUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/LogUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/common/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hooks/CucumberHooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hooks/TestContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/suites/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/configs.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/Register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegisterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegisterSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-failures.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-features.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-steps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/report-feature_1691701027.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/report-feature_1691701027.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/report-tag_2147485696.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/report-tag_2147485696.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/TestContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/TestContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +69,7 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Selflearning\CucumberJava\CucumberJavaProject\src\test\resources" />
       <recent name="D:\Selflearning\CucumberJava\CucumberJavaProject\src\test\java" />
+      <recent name="D:\Selflearning\CucumberJava\CucumberJavaProject\src\test" />
       <recent name="D:\Selflearning\CucumberJava\CucumberJavaProject\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
