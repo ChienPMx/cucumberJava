@@ -7,6 +7,13 @@
     <list default="true" id="b8f9e235-9719-4965-ac7f-8745a323d0e0" name="Changes" comment="update report config">
       <change beforePath="$PROJECT_DIR$/.github/workflows/run-cucumber.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/run-cucumber.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-failures.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-features.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-steps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/overview-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/report-feature_1691701027.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/report-feature_1691701027.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/report-tag_2147485696.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CucumberReports/cucumber-reports/cucumber-html-reports/report-tag_2147485696.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743244103756</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update report config">
+      <option name="closed" value="true" />
+      <created>1743244451455</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743244451455</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
