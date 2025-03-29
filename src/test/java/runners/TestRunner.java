@@ -14,8 +14,8 @@ import org.testng.annotations.Test;
         },
         plugin = {
                 "pretty",
-                "html:target/cucumber-reports/TestRunnerCategoryCMS.html",
-                "json:target/cucumber-reports/TestRunnerCategoryCMS.json",
+                "html:target/cucumber-reports/TestRunner.html",
+                "json:target/cucumber-reports/TestRunner.json",
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
         },
         tags = "@A"
@@ -24,7 +24,7 @@ import org.testng.annotations.Test;
 public class TestRunner extends AbstractTestNGCucumberTests {
 
         @Override
-        @DataProvider(parallel = true) // Hoặc false nếu không cần chạy song song
+        @DataProvider(parallel = true)
         public Object[][] scenarios() {
                 return super.scenarios();
         }
